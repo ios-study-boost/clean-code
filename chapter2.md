@@ -136,7 +136,7 @@ class Customor {
 ## 검색하기 쉬운 이름을 사용하라
 이름 길이는 범위 크기에 비례해야 한다. 변수나 상수를 코드 여러 곳에서 사용한다면 검색하기 쉬운 이름이 바람직하다. 
 
-예를 들어, 숫자 5를 그냥 사용하기보다는 `WORK_DAYS_PER_WEEK`와 같이 상수로 선언하고 사용하면 검색이 쉬워진다.
+예를 들어, 숫자 5를 그냥 사용하기보다는 `WORK_DAYS_PER_WEEK`와 같이 상수로 선언하고 사용하면 검색이 쉬워진다.<sup id="f2">[2](#footnote2)</sup>
 
 ## 인코딩을 피하라
 유형이나 범위 정보까지 인코딩에 넣으면 그만큼 이름을 해독하기 어려워진다. 
@@ -180,7 +180,7 @@ var phoneString: PhoneNumber
 
 생성자<sup>Constructor</sup>를 중복정의<sup>overload</sup>할 때는 정적 팩토리 메서드를 사용한다. 메서드는 인수를 설명하는 이름을 사용한다. 생성자 사용을 제한하려면 해당 생성자를 `private`로 선언한다.
 
-👍 Good<sup id="f2">[2](#footnote2)</sup>
+👍 Good<sup id="f3">[3](#footnote3)</sup>
 ```swift
 var fulcrumPoint: Complex = Complex.makeFromRealNumber(23.0)
 ```
@@ -244,4 +244,6 @@ var fulcrumPoint: Complex = Complex(23.0)
 
 <sup id="footnote1">1</sup> 실제 컨테이너가 `List`인 경우라도 컨테이너 유형을 이름에 넣지 않는 편이 바람직하다. [↩](#f1)
 
-<sup id="footnote2">2</sup> 팩토리 메서드 이름은 'make'로 시작해야 한다.<sup>[참고](https://gist.github.com/godrm/d07ae33973bf71c5324058406dfe42dd#말하는-것처럼-술술-써지도록-작성하라)</sup> [↩](#f2)
+<sup id="footnote2">2</sup> 스위프트에서 올바른 표기법은 `workDaysPerWeek`이다.<sup>[참고](https://gist.github.com/godrm/d07ae33973bf71c5324058406dfe42dd#일반-규칙)</sup> [↩](#f2)
+
+<sup id="footnote3">3</sup> 팩토리 메서드 이름은 'make'로 시작해야 한다.<sup>[참고](https://gist.github.com/godrm/d07ae33973bf71c5324058406dfe42dd#말하는-것처럼-술술-써지도록-작성하라)</sup> [↩](#f3)

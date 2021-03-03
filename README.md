@@ -2,7 +2,7 @@
 
 ## Table of Contents
 1. [깨끗한 코드](./chapter1.md)
-2. 의미 있는 이름
+2. [의미 있는 이름](./chapter2.md)
 3. 함수
 4. 주석
 5. 형식 맞추기

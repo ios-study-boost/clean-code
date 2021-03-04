@@ -26,8 +26,8 @@
 의도가 드러나는 이름을 사용하면 코드 이해와 변경이 쉬워진다.
 
 ```swift
-func getThem() -> Array<Array<Int>> {
-    var list1: Array<Array<Int>> = Array<Array<Int>>()
+func getThem() -> [[Int]] {
+    var list1: [[Int]] = []
     for x in theList {
         if x[0] == 4 {
             list1.append(x)
@@ -46,8 +46,8 @@ func getThem() -> Array<Array<Int>> {
 개념에 이름만 붙여도 코드가 상당히 나아진다.
 
 ```swift
-func getFlaggedCells() -> Array<Array<Int>> {
-    var flaggedCells: Array<Array<Int>> = Array<Array<Int>>()
+func getFlaggedCells() -> [[Int]] {
+    var flaggedCells: [[Int]] = []
     for cell in gameBoard {
         if cell[StatusValue] == Flagged {
             flaggedCells.append(cell)
@@ -58,8 +58,8 @@ func getFlaggedCells() -> Array<Array<Int>> {
 ```
 간단한 클래스 생성, 좀 더 명시적인 함수를 사용해 개선하면 다음과 같다.
 ```swift
-func getFlaggedCells() -> Array<Cell> {
-    var flaggedCells: Array<Cell> = Array<Cell>()
+func getFlaggedCells() -> [Cell] {
+    var flaggedCells: [Cell] = []
     for cell in gameBoard {
         if cell.isFlagged() {
             flaggedCells.append(cell)
@@ -92,7 +92,7 @@ func getFlaggedCells() -> Array<Cell> {
 
 - 함수 인수 이름으로 `souce`와 `destination`을 사용한다면 코드 읽기가 훨씬 더 쉬워진다.
     ```swift
-    public static func copyChars(a1: Array<Character>, a2:inout Array<Character>) {
+    public static func copyChars(a1: [Character], a2:inout [Character]) {
         for i in 0..<a1.count {
             a2[i] = a1[i]
         }

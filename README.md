@@ -3,8 +3,8 @@
 ## Table of Contents
 1. [깨끗한 코드](./chapter1.md)
 2. [의미 있는 이름](./chapter2.md)
-3. 함수
-4. 주석
+3. [함수](./chapter3.md)
+4. [주석](./chapter4.md)
 5. 형식 맞추기
 6. 객체와 자료 구조
 7. 오류 처리

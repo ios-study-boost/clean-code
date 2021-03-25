@@ -80,8 +80,12 @@ public class Geometry {
     public static let Pi = 3.1415292653589793
 
     public func area(shape: Object) throws -> Double {
-        if shape is Square {
-            var s: Square = 
+        if let s = shape as? Square {
+            return s.side * s.side
+        } else if r = shape as? Rectangle {
+            return r.height * r.width
+        } else if c = shape as? Circle {
+            return Pi * c.radius * c.radius
         }
     }
 }

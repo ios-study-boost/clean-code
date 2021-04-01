@@ -7,7 +7,7 @@
 4. [주석](./chapter4.md)
 5. [형식 맞추기](./chapter5.md)
 6. [객체와 자료 구조](./chapter6.md)
-7. 오류 처리
+7. [오류 처리](./chapter7.md)
 8. 경계
 9. 단위 테스트
 10. 클래스
@@ -24,3 +24,4 @@
 <a href="https://github.com/ios-study-boost/clean-code/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=ios-study-boost/clean-code" />
 </a>
+

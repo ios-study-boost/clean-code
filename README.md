@@ -13,7 +13,7 @@
 10. [클래스](./chapter10.md)
 11. [시스템](./chapter11.md)
 12. [창발성](./chapter12.md)
-13. 동시성
+13. [동시성](./chapter13.md)
 14. 점진적인 개선
 15. JUnit 들여다보기
 16. SerialDate 리팩터링
